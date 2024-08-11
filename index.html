@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+
+    h1, h2, h3, h4,h5,h6, p,a{
+        font-family: "Poppins", sans-serif;
+      
+        
+
+        }
+h4{
+    font-size:18px;
+    color:white;
+}
+h1{
+    font-size:40px;
+    font-weight: 600;
+    color:white; 
+}
+a{
+    font-size: 18px ;
+}
+h3{
+     font-size:20px;
+     color:white;
+     font-weight: 400;
+}
+h2{
+    font-size:35px
+
+ }
+ button{
+    font-size:18px;
+ }
+ .actves{
+    background-color:#2f549d ;
+    padding: 5px 30px;
+    border-radius:5px;
+    color:white;
+    font-weight:500
+ }
+ p{
+    font-size: 15px;
+ }
+ .pt100{padding-top: 100px;}.pt10{padding-top: 10px;}.pt50{padding-top: 50px;}.pt20{padding-top: 20px;}.pt30{padding-top: 30px;}.pt40{padding-top: 40px;}.pt60{padding-top: 60px;}.pt70{padding-top: 70px;}.pt80{padding-top: 80px;}
+
+ .pb100{padding-bottom: 100px;}.pb10{padding-bottom: 10px;}.pb50{padding-bottom: 50px;}.pb20{padding-bottom: 20px;}.pb30{padding-bottom: 30px;}.pb40{padding-bottom: 40px;}.pb60{padding-bottom: 60px;}.pb70{padding-bottom: 70px;}.pb80{padding-bottom: 80px;}
+ .mb100{padding-bottom: 100px;}.mb10{padding-bottom: 10px;}.mb50{padding-bottom: 50px;}.mb20{padding-bottom: 20px;}.mb30{padding-bottom: 30px;}.mb40{padding-bottom: 40px;}.mb60{padding-bottom: 60px;}.mb70{padding-bottom: 70px;}.mb80{padding-bottom: 80px;}
+
+ .mt100{padding-top: 100px;}.mt10{padding-top: 10px;}.mt50{padding-top: 50px;}.mt20{padding-top: 20px;}.mt30{padding-top: 30px;}.mt40{padding-top: 40px;}.mt60{padding-top: 60px;}.mt70{padding-top: 70px;}.mt80{padding-top: 80px;}
+
+ .frsec{
+    background: url('./img/hero.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .text-wra{
+    text-wrap: nowrap;
+    color:black;
+    background-color:#ffcf5c ;
+    padding:2px 20px; 
+    font-weight: 500;
+    border-radius:5px;
+    border: none;
+ }
+ .tetcolor{
+    color:#2f549d ;
+    font-weight: 500;
+ }
+ .bgsec{
+    background-color:white;
+   
+ }
+ .bgss{
+    margin-top: -60px;
+ }
+ .bgthrid{
+    background: url('./img/cobg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+ .box-1{
+    background:linear-gradient(0deg, rgba(180, 81, 241, 1) 0%, rgba(110, 138, 212, 1) 100%);
+ min-height: 320px;
+ color: white;
+ border-radius: 70px;
+ align-content: center;
+ }
+ .box-2{
+    background:white;
+    min-height: 320px;
+
+ border-radius: 70px;
+ color:black;
+ align-content: center;
+ }
+ li{
+    list-style: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+ }
+ .px-50{
+    padding: 30px 50px;
+ }
+ .bgfour{
+    background: #213079;
+ }
+ .mheiht{
+  padding: 20px 20px 20px;
+  margin:10px 0px;
+  border-radius: 10px;
+ }
+ .btnfour{
+    padding: 5px 70px;
+    font-size:20px;
+    font-weight: 600;
+    border-radius: 7px;
+ }
+ .fotie{
+font-weight: 700;
+color:white;
+ }
+ .fsvec{
+    font-weight: 700
+    
+    ;
+ }
+ .bginner{
+  background: #6d93df;
+  padding: 20px;
+ }
+ .inr{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+    border-radius:5px;
+    margin:10px 10px;
+ }
+ .inr p{
+    margin:0px;
+    text-wrap:balance;
+    padding: 0px 10px;
+    
+    font-weight: 500;
+ }
+ p span{
+    font-size:20px;
+    color: #6d93df;
+ }
+ .inr img{
+    padding: 0px 10px;
+ }
+ .bginner{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around}
+    .bno{
+        margin:10px 0px;
+        border: 1px solid white;
+        padding:10px 50px;
+        border-radius: 5PX;
+        
+    }
+    .bno .text-wra{
+        background-color: #6d93df;
+        padding: 0px!important;
+        
+    }
+    .bno a{
+        color:white;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+
+    }
+    .acc{
+        padding:50px 20px;
+    }
+    .accordion-item{
+        width:100%;
+        border:none;
+        border-bottom: 1px solid grey;
+    }
+    
+    .acched{
+        width:23%;font-weight:500 ;
+    }
+    .accordion-button{
+        padding: 30px 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .accordion-button:not(.collapsed){
+        background-color: white!important;
+        border: none !important;
+    }
+    .accordion-button:focus{
+        border:none !important;
+        box-shadow: none !important;
+    }
+    .accordion-body{
+        padding-bottom: 50px;
+    }
+    .secnine .text-wra{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 8px  40px;
+    }
+    .bgten{
+background-color: #edf4ff;
+    }
+    .pdd{
+        padding: 20px;
+        min-height: 340px;
+        border-radius: 10px !important;
+    }
+    .pdd h3{
+        color: #6d93df;
+        text-align: center;
+        font-weight: 500;
+    }
+    .mechh{
+        background: linear-gradient(34deg, rgba(114, 96, 164, 1) 3%, rgba(109, 147, 223, 1) 79%);
+        padding: 30px;
+        border-radius: 30px;
+    }
+    .colr{
+        background-color:#ffcf5c ;
+        padding: 5px 50px;
+        border-radius: 10px;
+     
+    }
+    .seli{
+        display: flex;
+        align-items: flex-start;
+gap:20px;
+color :white
+    }
+    .selii{
+        display: flex;
+        align-items: center;
+gap:20px;
+color :white;
+background:#6d93df;
+padding: 10px;
+border-radius: 50px;
+margin-top: 10px;
+}
+.selii img{
+height:60px
+}
+.selii p{
+    margin-bottom: 0px;
+}
+
+    .colb{
+        background-color: #edf4ff;
+        padding:10px 50px;
+        text-align: center;
+        border-radius: 5px;
+  
+    }
+    .colb a{
+         font-size: 25px;
+         color: black;
+         font-weight: 500;
+         text-decoration: none;
+    }
+    .bgelen h2{
+        font-size: 30px;
+    }
+    .bgtel{
+        background: url('./img/about-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:-500px 0% ;
+    }
+    .innersec{
+        background: linear-gradient(90deg, rgba(0,0,0,0) 9%, rgba(109,147,223,1) 51%, rgba(53,44,75,1) 100%);
+    }
+    .bglst{
+        background-color: #ffcf5c;
+        padding:100px 50px;
+    }
+    .bglst ul{
+        padding-left: 0px;
+    }
+.ltpdd{
+    padding: 0px 90px;
+}
+.alihj h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+}
+.alihj .text-wra{
+    background-color: #6d93df;
+    font-size: 25px;
+        font-weight: 500;
+        padding: 8px  40px;
+        color: white;
+}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+     background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #6d93df;
+      padding: 20px;
+      border-radius: 10px;
+    }.swiper-slide h3{
+        color: #6d93df !important;
+        font-weight: 600;
+        padding: 30px 0px 20px;
+    }
+    .sliimg{
+        border-radius: 50%;
+    }
+    .bgten1{
+        background: url('./img/alimini-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+.swiper-pagination{
+  position: relative !important;
+  margin-top: 30px;
+}
+.imbover img{
+    box-shadow:0px 0px 15px -3px rgba(0,0,0,0.1) ;
+    margin-top: 20px;
+    padding:10px;
+    border-radius: 10px;
+    transition: scale 4s;
+}
+.imbover img:hover{
+    transform: scale(1.1, 1.1);
+}
+.bord{
+    border-radius: 20px;
+}
+.bord h4{
+    font-weight: 600;
+}
+header li p{
+padding-left: 40px;
+padding-top: 30px;
+color: white;
+}
+.bghead.bghead{
+    background-image: url('./img/nav-back.png');
+    position: left;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  z-index: 100px;
+  
+}
+.bghead{
+   background-color: #213079;
+   background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  z-index: 100px;
+}
+
+.navbar-nav{
+    gap: 50px;
+}
+@media (max-width: 600px) { h
+    .pt100{   padding-top: 50px !important; } .pb100{padding-bottom: 50px !important;} .ptm30{padding-top: 60px;}
+    .actves{
+        text-wrap:nowrap ;
+        padding:5px 20px ;
+    }
+    .bgss{
+        margin:0px;
+        
+    }
+    .mob{
+        padding: 10px 50px;
+    }
+    .moble{
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap:10px
+    }
+    .slicer{
+        width:33%;
+    }
+    .inr p{
+        display: flex;
+        flex-direction: column;
+    }
+    .inr{
+        justify-content: center;
+    }
+    .fvestin img{
+    width:25%
+    }
+    .moob{
+        width:50% !important;
+    }
+    .accv{
+        flex-direction: column;
+    }
+    .accordion-button{
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .acched{
+        margin-top: 10px;
+    }
+    .fsvec br{
+        display: none;
+    }
+    .bgten .row{
+gap: 30px;
+    }
+    .bgtel{
+background-color: #2f549d !important;
+background-color: #2f549d !important;
+background:#2f549d !important; ;
+    }
+    .bglst{
+        padding: 50px 15px;
+    }
+    .ltpdd{
+        padding: 50px 15px;
+    }
+    .alihj h1{
+        font-size: 34px;
+    }
+    .alihj img{
+        width:55%;
+    }
+    .bghead{
+        background-position:top left;
+       background-image: none;
+    }
+    .navbar-nav{
+    gap: 10px;
+    padding-top:50px;
+} 
+}
+
+    </style>
+<body>
+    <header class="bghead">
+   <div class="bginer navbar navbar-expand-lg navbar-light d-flex    ">
+    <div class="container-fluid  ">
+        
+           <img src="./img/eduverseLogo.png" width="200px">
+
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse justify-content-end  align-items-center" id="navbarSupportedContent">
+
+                <ul class="d-flex justify-content-end align-items-baseline mb-0 navbar-nav " >
+                    <li class="nav-item pb-0"> <a class="nav-link  text-white " aria-current="page" href="#">Curriculum</a>
+                    </li>
+                    <li class="nav-item pb-0"> <a class="nav-link  text-white " aria-current="page" href="#">
+                        About Us</a></li>
+                    <li class="nav-item pb-0"> <a class="nav-link  text-white " aria-current="page" href="#">Benefits</a></li>
+                    <li class="nav-item pb-0"> <a class="nav-link  text-white " aria-current="page" href="#">Placements</a>
+                    </li>
+                    <li class="nav-item pb-0"> <a class="nav-link  text-white " aria-current="page" href="#">                     <button  class="text-wra
+                
+                            "  >Download Brochure 
+                        <img src="./img/download-grey.png"  width="15%"></button></a>
+                    </li>
+                </ul>
+               
+                
+            </div>
+        
+    </div>
+   </div>
+    </header>
+    <section class=" pt100  pb100 frsec">
+    <div class="container  pt50 pb50">
+        <div class="row d-flex justify-content-between ">
+            <div class="col-lg-6">
+                    <div class="px-3">
+   <h1 class="px-3"  >ARTIFICIAL INTELLIGENCE <BR>
+    & DATA SCIENCE</h1>
+    <h4 class="px-3 pt30">Step into the Future and Become a Leader<BR>
+        in Data-Driven Technologies!</h4>
+      <div class="d-flex gap-2 pt40">
+            <a href="#"><button class="btn actves"      >Learn more
+            </button></a>
+            <a href="#" ><button  class="text-wra
+                
+                "  >Download Brochure 
+            <img src="./img/download-grey.png"  width="15%"></button></a>
+        </div>
+            </div>
+        </div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container bgss">
+<div class="row justify-content-center align-items-center">
+    <div class="col-lg-8 ">
+       <div class="bg-white bord">
+        <div class="row  text-center   pt30 pb10  ">
+           
+            <div class="col-lg-4 rounded rounded-3  ">
+                <div>
+                    <h4 class="tetcolor">Durations</h4>
+                    <p>6 Months</p>
+                </div>
+            </div>
+            <div class="col-lg-4 ">  <div><h4 class="tetcolor">Format</h4>
+                <p>Online Learning Program</p></div></div>
+            <div class="col-lg-4  "> <div> <h4 class="tetcolor">Placement</h4>
+                <p>100% Job Placement Assistance</p></div></div>
+       
+    </div>
+       </div>
+    </div>
+</div>
+
+    </div>
+</section> 
+<!--<section class="bgthrid bgss">
+
+<div class="container pt80 pb30 text-center ">
+    <h3>
+        Open Doors To Exciting Career Opportunities in
+    </h3>
+    <h2 class="text-white">
+        AI & Data Science
+    </h2>
+    <div class="row d-flex justify-content-center  gap-1 pt50 ">
+
+        <div class="col-lg-3">
+<div class="box-1">
+   
+        <li>Data Analyst</li>
+        <li>MLOps Engineer</li>
+        <li> AI Consultant</li>
+        <li>Data Engineer</li>
+        <li> Business Intelligence (BI)<br> Developer</li>
+ 
+</div>
+        </div>
+        <div class="col-lg-3">
+            <div class="box-2">
+               
+                    <li>AI Engineer</li>
+                    <li>Data Scientist</li>
+                    <li>Deep Learning Engineer</li>
+                    <li>Data Science Engineer</li>
+                    <li>Machine Learning Specialist</li>
+              
+            </div>
+        </div>
+    </div>
+</div>
+</section>-->
+<section class="bgthrid bgss pt100 pb50">
+
+<div class="container">
+    <div class="row justify-content-center align-content text-center">
+        <h3>
+            Open Doors To Exciting Career Opportunities in
+        </h3>
+        <h2 class="text-white pb40">
+            AI & Data Science
+        </h2>
+        <div class="col-lg-3 mob">
+            <div class="box-1">
+   
+                <li>Data Analyst</li>
+                <li>MLOps Engineer</li>
+                <li> AI Consultant</li>
+                <li>Data Engineer</li>
+                <li> Business Intelligence (BI)<br> Developer</li>
+         
+        </div>
+        </div>
+        <div class="col-lg-3 mob">
+            <div class="box-2">
+               
+                <li>AI Engineer</li>
+                <li>Data Scientist</li>
+                <li>Deep Learning Engineer</li>
+                <li>Data Science Engineer</li>
+                <li>Machine Learning Specialist</li>
+          
+        </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+<section class="bgfour  pt50">
+    <div class="container 
+    ">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-5 pt100 " >
+            <img src="./img/new right-8.png"  width="100%" >
+        </div>
+        <div class="col-lg-6 pb70  ">
+<h2 class="text-white fotie ">Designed For Working <br>Professionals Like You</h2>
+<div class="row pt30">
+    <div class="col-lg-6">
+        <div class="bg-white mheiht">
+            <h3 class="tetcolor">Learn Anytime,<br> 
+                Anywhere</h3>
+                <p>
+                    Flexible online learning with interactive virtual classes and a mobile friendly platform for on-the-go education.
+                </p>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="bg-white  mheiht">
+            <h3 class="tetcolor">Learn Anytime,<br>
+                Anywhere</h3>
+                <p>
+                    Flexible online learning with interactive virtual classes and a mobile friendly platform for on-the-go education.
+                </p>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="bg-white  mheiht">
+            <h3 class="tetcolor">Learn Anytime,<br>
+                Anywhere</h3>
+                <p>
+                    Flexible online learning with interactive virtual classes and a mobile friendly platform for on-the-go education.
+                </p>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="bg-white  mheiht">
+            <h3 class="tetcolor"> Learn Anytime,<br>
+                Anywhere</h3>
+                <p>
+                    Flexible online learning with interactive virtual classes and a mobile friendly platform for on-the-go education.
+                </p>
+        </div>
+    </div>
+</div>
+      
+<!--call action-->
+<div class="d-flex pt40 justify-content-between align-items-center moble">
+    <h3>Ready to speak with
+        our experts?</h3>
+        <button class="btnfour">
+            <a href="#">Apply Now</a>
+        </button>
+</div>
+
+
+</div>
+       
+    </div>
+</div>
+</section>
+<section class="pt100 pb100 fvestin">
+    <div class="container">
+        <h2 class="text-center fsvec">
+            Key Takeaways
+        </h2> 
+        <div class="row justify-content-center pt30">
+          
+            <div class="col-lg-2 moob">
+                <div class="text-center">
+                    <img src="./img/kt1.png" width="30%">
+                    <p class="pt20">9am - 6pm<br>
+                        Calling Support</p>
+                </div>
+            </div>
+            <div class="col-lg-2 moob">
+                <div class="text-center">
+                    <img src="./img/kt1.png" width="30%">
+                    <p class="pt20">9am - 6pm<br>
+                        Calling Support</p>
+                </div>
+            </div>
+            <div class="col-lg-2 moob">
+                <div class="text-center">
+                    <img src="./img/kt1.png" width="30%">
+                    <p class="pt20">9am - 6pm<br>
+                        Calling Support</p>
+                </div>
+            </div>
+            <div class="col-lg-2 moob">
+                <div class="text-center">
+                    <img src="./img/kt1.png" width="30%">
+                    <p class="pt20">9am - 6pm<br>
+                        Calling Support</p>
+                </div>
+            </div>
+            <div class="col-lg-2 moob">
+                <div class="text-center">
+                    <img src="./img/kt1.png " width="30%">
+                    <p class="pt20">9am - 6pm<br>
+                        Calling Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--slider-->
+<section class="pt100 pb100 bgten1">
+    <div class="container" >
+        <h2 class="text-center fsvec">Our Alumini At Work</h2>
+
+        <div class="row">
+            <div class="col lg- pt50">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="bg-white">
+                        <img src="./img/slide-2.png" class="sliimg" width="40%" alt="">
+                        <h3> Pavitra</h3>
+                        <img src="./img/com-3.png" alt="" width="90%">
+                      </div></div>
+                      <div class="swiper-slide">
+                        <div class="bg-white">
+                            <img src="./img/slide-2.png" class="sliimg"  width="40%" alt="">
+                            <h3> Pavitra</h3>
+                            <img src="./img/com-3.png" alt="" width="90%">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-white">
+                            <img src="./img/slide-2.png" class="sliimg"   width="40%"  alt="">
+                            <h3> Pavitra</h3>
+                            <img src="./img/com-3.png" alt="" width="90%">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-white">
+                            <img src="./img/slide-2.png" class="sliimg"  width="40%"  alt="">
+                            <h3> Pavitra</h3>
+                            <img src="./img/com-3.png" alt="" width="90%">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-white">
+                            <img src="./img/slide-2.png" class="sliimg"  width="40%"  alt="">
+                            <h3> Pavitra</h3>
+                            <img src="./img/com-3.png" alt="" width="90%">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-white">
+                            <img src="./img/slide-2.png" class="sliimg"  width="40%"  alt="">
+                            <h3> Pavitra</h3>
+                            <img src="./img/com-3.png" alt="" width="90%">
+                          </div>
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt50  imbover">
+    <div class="container">
+        <h2  class="text-center fsvec pt50 pb30">Tools and Languages Covered in AI & Data Science
+        </h2>
+        <div class="row">
+
+   
+            <div class="col-lg-2 slicer">
+                <img src="./img/Python.png"  width="100%" alt="">
+            </div>
+            <div class="col-lg-2 slicer"> <img src="./img/NumPy.png" width="100%" alt=""></div>
+            <div class=" slicer col-lg-2"> <img src="./img/Pandas.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/PyTorch.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/seaborn.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/Python.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/Python.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/seaborn.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/PyTorch.png" width="100%" alt=""></div>
+            <div class=" slicer col-lg-2"> <img src="./img/Pandas.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/NumPy.png" width="100%" alt=""></div>
+            <div class="col-lg-2 slicer"> <img src="./img/Python.png" width="100%" alt=""></div>
+        </div>
+    </div>
+</section>
+<!--section9-->
+<div class="section pb100 pt100">
+    <div class="container secnine">
+    <h2  class="text-center fsvec">The Comprehensive AI & Data Science Certification Syllabus
+    </h2>
+    <div class="row pt70">
+        <div class="col-lg-3 ">
+            <div class="bginner rounded">
+                <div class="bg-white inr"><img src="./img/clock.png" height="30px"> <p class="text-dark">
+                    <span class="heading">120 Hrs
+                    </span>Learning content
+                </p></div>
+                <div class="bg-white inr"><img src="./img/tool.png" height="30px"> <p>
+                    <span class="heading">120 Hrs
+                    </span>Learning content
+                </p></div>
+                <div class="bno d-flex justify-content-center">
+                    <button  class="text-wra
+                
+                    "  >   <a href="#" >Download Brochure 
+               </a></button> <img src="./img/download-icon.png"  width="15%">
+                </div>
+            </div>
+        <div></div>
+        </div>
+        <div class="col-lg-9 ptm30 ">
+<p>The Professional Certificate in AI and Data Science course provides an in-depth understanding of every aspect of AI and data science, from Python programming to MLOps. With our comprehensive curriculum, students will gain a deep understanding of the latest technologies and trends shaping the AI and data science landscape.</p>
+ <div class="acc">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="d-flex align-items-baseline accv  ">
+
+            <h3 class="text-dark acched">Module 1</h3>
+        <div class="accordion-item ">
+       
+        
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+    </div>
+       
+    <!--acc2-->
+    <div class="d-flex align-items-baseline accv  ">
+
+        <h3 class="text-dark acched">Module 1</h3>
+    <div class="accordion-item ">
+   
+    
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+</div>
+   <!--acc3-->
+   <div class="d-flex align-items-baseline accv  ">
+
+    <h3 class="text-dark acched">Module 1</h3>
+<div class="accordion-item ">
+
+
+  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsethreethree" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      Accordion Item #1
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    </div>
+  </div>
+</div>
+</div>
+   <!--acc4-->
+   <div class="d-flex align-items-baseline accv  ">
+
+    <h3 class="text-dark acched">Module 1</h3>
+<div class="accordion-item ">
+
+
+  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      Accordion Item #1
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    </div>
+  </div>
+</div>
+</div>
+   <!--acc5-->
+   <div class="d-flex align-items-baseline accv  ">
+
+    <h3 class="text-dark acched">Module 1</h3>
+<div class="accordion-item ">
+
+
+  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      Accordion Item #1
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    </div>
+  </div>
+</div>
+</div>
+   <!--acc6-->
+   <div class="d-flex align-items-baseline accv  ">
+
+    <h3 class="text-dark acched">Module 1</h3>
+<div class="accordion-item ">
+
+
+  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      Accordion Item #1
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    </div>
+  </div>
+</div>
+</div>
+   <!--acc7-->
+   <div class="d-flex align-items-baseline accv  ">
+
+    <h3 class="text-dark acched">Module 1</h3>
+<div class="accordion-item ">
+
+
+  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      Accordion Item #1
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    </div>
+  </div>
+</div>
+</div>
+      
+      </div>
+
+
+
+ </div>
+
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="#" ><button  class="text-wra text-center
+                
+            "  >Apply Now 
+        </button></a>
+    </div>
+</div>
+</div>
+</section>
+ 
+<!--secten-->
+<section class="bgten pt50 pb50">
+<div class="container">
+    <h2  class="text-center fsvec">Discover The Benefits Of Our <br>
+        AI & Data Science Course
+    </h2>
+    <div class="row justify-content-center pt50">
+        <div class="col-lg-3">
+            <div class="bg-white rounded-1 pdd ">
+                <h3>
+                    Comprehensive
+Curriculum
+                </h3>
+                <p>Our programme offers a comprehensive curriculum covering all aspects of AI and data science. From machine learning algorithms to big data analytics, you will gain the skills needed to excel in the rapidly evolving field of AI and data science.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="bg-white rounded-1 pdd ">
+                <h3>
+                    Comprehensive
+Curriculum
+                </h3>
+                <p>At Eduverse, we pride ourselves on our network of 700+ leading companies, opening doors to exceptional placement opportunities. Our dedicated placement cell ensures student success, reflected in the impressive highest CTC of 12 LPA. Join us for a successful and fulfilling career.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="bg-white rounded-1 pdd ">
+                <h3>
+                    Comprehensive
+Curriculum
+                </h3>
+                <p>Our programme offers a comprehensive curriculum covering all aspects of AI and data science. From machine learning algorithms to big data analytics, you will gain the skills needed to excel in the rapidly evolving field of AI and data science.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--sec11-->
+<section>
+    <div class="container pt50 pb50  bgelen">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-5">
+                <div class="mechh">
+                    <h2 class="text-white text-center pb10">Program Fees<br>
+                        Live Online Classes
+                    </h2>
+                    <div class=" colr text-center">
+                         <h1>₹ 77,000</h1>
+                         <p class="m-0">inclusive of all taxes</p>
+                    </div>
+                  <div>
+                    <ul class="pt30 mb-0">
+                        <li class=seli> <img src="./img/ul-tik.png" alt=""> <p>6-months online program.</p></li>
+                        <li class=seli> <img src="./img/ul-tik.png" alt=""> <p>Access over 700 companies offering diverse opportunities in the AI and data science industry.</p></li>
+                        <li class=seli> <img src="./img/ul-tik.png" alt=""> <p>Master disruptive technologies like machine learning, deep learning, and MLOps for data-driven decision-making and versatility.</p></li>
+                        <li class=seli> <img src="./img/ul-tik.png" alt=""> <p>Master disruptive technologies like machine learning, deep learning, and MLOps for data-driven decision-making and versatility.</p></li>
+                    </ul>
+                  </div>
+                        
+                 <h4 class="colb">
+                    <a href="#">Get Started</a>
+                 </h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SECTWEL-->
+<section class="bgtel">
+    <div class="innersec">
+    <div class="container ">
+        <div class="row pt80 pb80">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+                <h2 class="fotie">About Eduverse</h2>
+                <p class="text-white pt40">Welcome to Rajalakshmi Eduverse, an innovative initiative by Rajalakshmi Institutions, providing industry-aligned education through cutting-edge digital methods. As part of Tamil Nadu's largest private engineering college group, we prioritize industry readiness and offer programs designed by experts to meet global corporate demands. Join us to unleash your potential with impactful, relevant education for a successful future in the dynamic professional landscape.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-6 bglst  ">
+        <div class="  ">
+            <h2 class="fsvec">How You Benefit From This Program</h2>
+        
+    
+
+        <div>
+            <ul class="pt30 mb-0">
+                <li class="selii"> <img src="./img/checked.png" alt=""> <p>Elevate Your Career: Elevate your career with the Artificial Intelligence and Data Science course at your own pace while balancing your current job commitments.</p></li>
+                <li class="selii"> <img src="./img/checked.png" alt=""> <p>Personalized Guidance: Benefit from personalized guidance, with limitless opportunities to propel your AI and data science journey to new heights.</p></li>
+                <li class="selii"> <img src="./img/checked.png" alt=""> <p>Diverse Job Opportunities: Seize diverse job opportunities from reputed AI and data science companies.</p></li>
+                <li class="selii"> <img src="./img/checked.png" alt=""> <p>Recognize Disruptive Models: Recognize disruptive models, strategically plan integrations, and future-proof your AI and data science strategies.</p></li>
+                <li class="selii"> <img src="./img/checked.png" alt=""> <p>Recognize Disruptive Models: Recognize disruptive models, strategically plan integrations, and future-proof your AI and data science strategies.</p></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ltpdd    ">
+                <h2 class="fsvec"> Join The Most Promising Program
+                        </h2>
+                    <p class="pt40">Discover the power of AI and data science. Enroll in our transformative Artificial Intelligence and Data Science course and become a sought-after AI and data science professional with expertise in AI technology and digital innovations. Join our vibrant community of aspiring AI and data science leaders and propel your career to new heights!
+            
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<section class="bgten pt100 pb100">
+    <div class="container">
+        <div class="row justify-content-center align-items-center text-center  alihj pt50 pb50">
+            <div class="col-lg-12">
+                <div><img src="./img/new-edu.png" width="30%">
+                <h1 class="pt20">
+                    Have Further Queries? Contact Us!
+
+                </h1>
+                <p class="text-dark">Request a Callback. An expert from the admissions office will call you in the next 24 working hours.
+
+                </p>
+                <a href="#" ><button  class="text-wra text-center
+                
+                    "  >Apply Now 
+                </button>
+                </div>
+            </div>        </div>
+    </div>
+</section>
+<!--script-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+    340: {
+        slidesPerView: 1,
+        spaceBetween: 60,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 60,
+      },
+    },
+
+  });
+</script>
+</body>
+</html>
+
+
